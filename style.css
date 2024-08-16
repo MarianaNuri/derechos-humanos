@@ -1,0 +1,111 @@
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #000000;
+  font-weight: 700;
+}
+
+.accordion-button {
+  background-color: #4a69bd;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #3b5998;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body {
+  background-color: #f0f3f5;
+  padding: 1.5rem;
+  border-radius: 0 0 8px 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+ul li::before {
+  content: "• ";
+  color: #4a69bd;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+ul ul li::before {
+  content: "◦ ";
+  color: #60a3bc;
+  font-size: 1.2rem;
+}
+
+ul ul ul li::before {
+  content: "▪ ";
+  color: #82ccdd;
+  font-size: 1rem;
+}
+
+#introduccion{
+  height: 90vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  background-image: url();
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.derechos{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#derecho-1 {
+  background-image: url('assets/seguridad_social.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#derecho-2 {
+  background-image: url('assets/salud.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#derecho-3 {
+  background-image: url('assets/igualdad.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+header .nav-item::before,
+footer .nav-item::before {
+    content: none !important;
+    display: none; /* Asegúrate de que no se muestre */
+}
+
+
+
+
